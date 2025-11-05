@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'Fusion Pixel 12';
+	src: url(fonts/fusion-pixel-12px-monospaced-zh_hant.ttf);
+}
+
+@font-face {
+	font-family: 'Pixelated Times New Roman';
+	src: url(fonts/pixelated-times-new-roman.otf);
+}
+
+@font-face {
+	font-family: "Taipei24";
+	src: url(fonts/Taipei24.ttf);
+}
+
+body{background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/sky_hiru.png);
+	background-size: cover;}
+
+.applications{display: block;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	text-align: center;
+	opacity: 0.25;
+	z-index: -1;
+	}
+	
+.name{color: #ffffff;
+	text-shadow: 1px 1px #000000;
+}
+
+.titlebar{display: flex;
+	justify-content: center;
+}
+
+.content{position: relative;
+	width: 1276px;
+	height: 945px;
+	margin: auto;
+	border: 1px solid #716F65;
+	box-shadow: 0 0 0 1px #9D9DA1;
+	background-color: white;
+	overflow: auto;
+}
+
+.menu{display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+
+.item{width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+.about{display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.landscape{display: flex;
+	justify-content: center;
+}
+
+a{font-family: 'Fusion Pixel 12';
+	font-size: 18px;
+	color: #000000;
+	text-decoration: none;}
+	
+h1{font-family: 'Pixelated Times New Roman';
+	font-size: 80px;
+	text-align: center;
+}
+
+.title{font-family: 'Taipei24';
+	font-size: 40px;
+}
+
+ul{font-family: 'Pixelated Times New Roman';
+	font-size: 50px;
+}
+
+.chinese{font-family: 'Taipei24';
+	font-size: 25px;
+}
