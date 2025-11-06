@@ -26,11 +26,26 @@ body{background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
 	z-index: -1;
 	}
 	
+button{display: inline;
+	background: none; 
+	padding: 0;
+	margin: 0;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	border-radius: 0;
+	cursor: pointer;
+	}
+	
 .name{color: #ffffff;
 	text-shadow: 1px 1px #000000;
 }
 
 .titlebar{display: flex;
+	justify-content: center;
+}
+
+.menubar{display: flex;
 	justify-content: center;
 }
 
@@ -44,15 +59,27 @@ body{background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
 	overflow: auto;
 }
 
-.menu{display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 10px;
+.container{position: relative;
+	margin: auto;
+	width: 1278px;
+	height: 62px;
+	background-image: linear-gradient(to right, #f3f3ee, #e0e2ea);
+	align-content: center;
 }
 
-.item{width: 100px;
-	height: 100px;
-	text-align: center;
+.menu{display: flex;
+	position: relative;
+	flex-direction: row;
+	align-content: center;
+	gap: 25px;
+	left: 10px;
+}
+
+.item{display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 50px;
+	gap: 5px;
 }
 
 .about{display: flex;
@@ -60,6 +87,10 @@ body{background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
+}
+
+.hometown{width: 1024px;
+	margin: auto;
 }
 
 .landscape{display: flex;
